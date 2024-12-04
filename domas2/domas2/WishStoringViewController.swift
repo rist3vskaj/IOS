@@ -12,7 +12,7 @@ class WishStoringViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .white
+        view.backgroundColor = .red
         setupTableView()
         setupTextField()
         setupAddWishButton()
@@ -25,8 +25,9 @@ class WishStoringViewController: UIViewController {
         tableView.dataSource = self // Set data source
         view.addSubview(tableView)
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "WishCell") // Register cell
+        tableView.backgroundColor = .red
 
-        // Constraints for UITableView
+        
         NSLayoutConstraint.activate([
             tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
@@ -39,6 +40,7 @@ class WishStoringViewController: UIViewController {
         textField.translatesAutoresizingMaskIntoConstraints = false
         textField.borderStyle = .roundedRect
         textField.placeholder = "Enter your wish"
+       textField.backgroundColor = .yellow
 
         // Constraints for UITextField
         NSLayoutConstraint.activate([
@@ -52,8 +54,8 @@ class WishStoringViewController: UIViewController {
     private func setupAddWishButton() {
         addWishButton.translatesAutoresizingMaskIntoConstraints = false
         addWishButton.setTitle("Add Wish", for: .normal)
-        addWishButton.backgroundColor = .systemBlue
-        addWishButton.setTitleColor(.white, for: .normal)
+        addWishButton.backgroundColor = .systemOrange
+        addWishButton.setTitleColor(.red, for: .normal)
         addWishButton.layer.cornerRadius = 10
         addWishButton.addTarget(self, action: #selector(addWishButtonPressed), for: .touchUpInside)
 
@@ -96,6 +98,7 @@ extension WishStoringViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "WishCell", for: indexPath)
         cell.textLabel?.text = wishes[indexPath.row]
+        cell.backgroundColor = .yellow
         return cell
     }
 }

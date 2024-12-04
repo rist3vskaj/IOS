@@ -21,7 +21,7 @@ final class CustomSlider: UIView {
     }
     
     private func configureUI() {
-        backgroundColor = .white
+        backgroundColor = .systemPink
         translatesAutoresizingMaskIntoConstraints = false
         
         addSubview(slider)

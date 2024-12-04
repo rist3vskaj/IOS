@@ -18,6 +18,12 @@
 		EF90C7BD2CDA88B300075881 /* WishMakerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF90C7BC2CDA88B300075881 /* WishMakerViewModel.swift */; };
 		EF90C7BF2CDA897300075881 /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF90C7BE2CDA897300075881 /* CustomSlider.swift */; };
 		EF90C7C12CDA8A0700075881 /* UIColor+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF90C7C02CDA8A0700075881 /* UIColor+Custom.swift */; };
+		EFA8541E2D00930A00C830EA /* CalendarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA8541D2D00930A00C830EA /* CalendarManager.swift */; };
+		EFB38CD22CFB571A006DA9EE /* WishCalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB38CD12CFB5719006DA9EE /* WishCalendarViewController.swift */; };
+		EFB38CD42CFCD2AB006DA9EE /* WishEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB38CD32CFCD2AB006DA9EE /* WishEventCell.swift */; };
+		EFB38CD62CFDCDDA006DA9EE /* WishEventCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB38CD52CFDCDDA006DA9EE /* WishEventCreationView.swift */; };
+		EFB38CD82CFDCE5C006DA9EE /* CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB38CD72CFDCE5C006DA9EE /* CoreData.swift */; };
+		EFB38CDB2CFF6B0C006DA9EE /* EventModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EFB38CD92CFF6B0C006DA9EE /* EventModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +59,12 @@
 		EF90C7BC2CDA88B300075881 /* WishMakerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishMakerViewModel.swift; sourceTree = "<group>"; };
 		EF90C7BE2CDA897300075881 /* CustomSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSlider.swift; sourceTree = "<group>"; };
 		EF90C7C02CDA8A0700075881 /* UIColor+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Custom.swift"; sourceTree = "<group>"; };
+		EFA8541D2D00930A00C830EA /* CalendarManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarManager.swift; sourceTree = "<group>"; };
+		EFB38CD12CFB5719006DA9EE /* WishCalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishCalendarViewController.swift; sourceTree = "<group>"; };
+		EFB38CD32CFCD2AB006DA9EE /* WishEventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishEventCell.swift; sourceTree = "<group>"; };
+		EFB38CD52CFDCDDA006DA9EE /* WishEventCreationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishEventCreationView.swift; sourceTree = "<group>"; };
+		EFB38CD72CFDCE5C006DA9EE /* CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData.swift; sourceTree = "<group>"; };
+		EFB38CDA2CFF6B0C006DA9EE /* EventModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EventModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +95,7 @@
 		EF0522402CD8FCE800133E51 = {
 			isa = PBXGroup;
 			children = (
+				EFB38CD92CFF6B0C006DA9EE /* EventModel.xcdatamodeld */,
 				EF05224B2CD8FCE800133E51 /* domas2 */,
 				EF05226C2CD8FCEA00133E51 /* domas2UITests */,
 				EF05224A2CD8FCE800133E51 /* Products */,
@@ -112,6 +125,11 @@
 				EF90C7BC2CDA88B300075881 /* WishMakerViewModel.swift */,
 				EF90C7BE2CDA897300075881 /* CustomSlider.swift */,
 				EF90C7C02CDA8A0700075881 /* UIColor+Custom.swift */,
+				EFB38CD12CFB5719006DA9EE /* WishCalendarViewController.swift */,
+				EFB38CD32CFCD2AB006DA9EE /* WishEventCell.swift */,
+				EFB38CD52CFDCDDA006DA9EE /* WishEventCreationView.swift */,
+				EFB38CD72CFDCE5C006DA9EE /* CoreData.swift */,
+				EFA8541D2D00930A00C830EA /* CalendarManager.swift */,
 			);
 			path = domas2;
 			sourceTree = "<group>";
@@ -259,9 +277,15 @@
 				EF05224D2CD8FCE800133E51 /* AppDelegate.swift in Sources */,
 				EF90C7BF2CDA897300075881 /* CustomSlider.swift in Sources */,
 				EF90C7BD2CDA88B300075881 /* WishMakerViewModel.swift in Sources */,
+				EFB38CD82CFDCE5C006DA9EE /* CoreData.swift in Sources */,
 				EF90C7612CDA4AFF00075881 /* WishStoringViewController.swift in Sources */,
+				EFB38CD62CFDCDDA006DA9EE /* WishEventCreationView.swift in Sources */,
 				EF90C7B92CDA882F00075881 /* ViewController.swift in Sources */,
+				EFB38CD22CFB571A006DA9EE /* WishCalendarViewController.swift in Sources */,
 				EF90C7B82CDA882F00075881 /* SceneDelegate.swift in Sources */,
+				EFB38CDB2CFF6B0C006DA9EE /* EventModel.xcdatamodeld in Sources */,
+				EFB38CD42CFCD2AB006DA9EE /* WishEventCell.swift in Sources */,
+				EFA8541E2D00930A00C830EA /* CalendarManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +449,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = domas2/Info.plist;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "Calendar acess is crucial to spy on you";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -452,6 +477,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = domas2/Info.plist;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "Calendar acess is crucial to spy on you";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -582,6 +608,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EFB38CD92CFF6B0C006DA9EE /* EventModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EFB38CDA2CFF6B0C006DA9EE /* EventModel.xcdatamodel */,
+			);
+			currentVersion = EFB38CDA2CFF6B0C006DA9EE /* EventModel.xcdatamodel */;
+			name = EventModel.xcdatamodeld;
+			path = /Users/macbookprom1/Desktop/faks/II/ios/domas2/EventModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = EF0522412CD8FCE800133E51 /* Project object */;
 }

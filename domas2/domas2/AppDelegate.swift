@@ -7,15 +7,27 @@
 
 import UIKit
 
-@main
+@UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        window = UIWindow(frame: UIScreen.main.bounds)
+        
+        // Create the root view controller
+        let wishMakerVC = WishMakerViewController()
+
+        // Wrap it inside a UINavigationController
+        let navigationController = UINavigationController(rootViewController: wishMakerVC)
+
+        // Set the root view controller of the window to the navigation controller
+        window?.rootViewController = navigationController
+        window?.makeKeyAndVisible()
+
         return true
     }
+}
 
     // MARK: UISceneSession Lifecycle
 
@@ -32,5 +44,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
-}
+
 
